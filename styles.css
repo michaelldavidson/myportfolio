@@ -1,0 +1,41 @@
+html {
+    font-family: ubuntu, sans-serif;
+    background-color: #257AAD;
+}
+
+/* Header styles */
+
+header {
+    background-image: linear-gradient(#032144, #257AAD);
+    padding: 5px;
+    height: 130px;
+}
+
+header h1,h2 {
+    color: #D4D6C5;
+}
+
+nav li {
+    display: inline-block;
+    width: 70px;
+    color:#032144;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 0px 0px 0px;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+.red {
+    background-color: #ED535A;
+}
+
+
+.yellow {
+    background-color: #FAE395;
+}
+
+nav {
+    position: fixed;
+    right: 10px;
+    top: 80px;
+}
