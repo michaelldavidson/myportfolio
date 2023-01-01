@@ -39,3 +39,14 @@ nav {
     right: 10px;
     top: 80px;
 }
+
+
+/* About Me Styles */
+
+.about-me p {
+    color:#FAE395
+}
+
+.about-me h3 {
+    color:#032144
+}
