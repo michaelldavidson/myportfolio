@@ -21,7 +21,7 @@ nav li {
     color:#032144;
     text-align: center;
     padding: 15px;
-    border-radius: 10px 0px 0px 0px;
+    border-radius: 20px 0px 0px 0px;
     font-family: 'Ubuntu' sans-serif;
 }
 
@@ -44,9 +44,35 @@ nav {
 /* About Me Styles */
 
 .about-me p {
-    color:#FAE395
+    color:#FAE395;
+    text-align:justify;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0px;
 }
 
 .about-me h3 {
-    color:#032144
+    color:#032144;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.about-me {
+    margin: 0px 20px;
+}
+
+.picture img {
+    border:#032144 solid 3px;
+    border-radius: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    width: 90%;
+}
+
+.map {
+    border:#032144 solid 3px;
+    border-radius: 25px;
 }
