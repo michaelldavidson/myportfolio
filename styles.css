@@ -1,6 +1,11 @@
+* {
+    margin: 0px;
+}
+
 html {
     font-family: ubuntu, sans-serif;
     background-color: #257AAD;
+    margin: 0px;
 }
 
 /* Header styles */
@@ -9,6 +14,9 @@ header {
     background-image: linear-gradient(#032144, #257AAD);
     padding: 5px;
     height: 130px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 header h1,h2 {
@@ -19,30 +27,57 @@ header h1,h2 {
 h1 {
     font-size: 50px;
     line-height: 10px;
+    position: absolute;
+    top: 30px;
 }
 
 h2 {
     font-size: 35px;
     line-height: 10px;
+    position: absolute;
+    top: 90px;
 }
 
 nav li {
     display: inline-block;
     width: 70px;
-    color:#032144;
     text-align: center;
     padding: 15px;
     border-radius: 20px 0px 0px 0px;
     font-family: 'Ubuntu' sans-serif;
+    margin-right: -20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 18px;
+    color:#032144;
+}
+
+
+nav a:visited {
+    color:#032144;
 }
 
 .red {
     background-color: #ED535A;
 }
 
+.red:hover {
+    background-color:#D4D6C5;
+    cursor: pointer;
+}
+
+
 
 .yellow {
     background-color: #FAE395;
+}
+
+.yellow:hover {
+    background-color:#D4D6C5;
+    cursor: pointer;
 }
 
 nav {
@@ -54,12 +89,17 @@ nav {
 
 /* About Me Styles */
 
+.main-page {
+    position: relative;
+    top: 150px;
+}
+
 
 .about-me p {
     color:#FAE395;
     text-align:justify;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     margin-top: 0px;
     
 }
@@ -111,6 +151,45 @@ nav {
     color:#FAE395;
     opacity: 0.8;
     padding: 0px 10px;
-    line-height: 5px;
+    line-height: 30px;
+    height: 30px;
 
+}
+
+
+footer {
+    background-image: linear-gradient(#257AAD, #032144);
+    height: 200px;
+    display: block;
+    position:absolute;
+    top: 600px;
+    width: 100%;
+}
+
+footer h4 {
+    text-align:center;
+    color:#032144;
+    font-size: 20px;
+}
+
+
+/* Buttons Styling */
+
+.buttons div {
+    height: 30px;
+    width: 120px;
+    background-color: #FAE395;
+    color:#032144;
+    border:#032144 solid 3px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.buttons {
+    position: absolute;
+    top: 150px;
+}
+
+.buttons h4 {
+    margin: auto;
 }
