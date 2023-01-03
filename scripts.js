@@ -14,6 +14,10 @@ hideElement();
 function buttonsBack () {
     htmlButton.style.backgroundColor = '';
     htmlButton.style.boxShadow = '';
+    scratchButton.style.backgroundColor = '';
+    scratchButton.style.boxShadow = '';
+    spreadsheetButton.style.backgroundColor = '';
+    spreadsheetButton.style.boxShadow = '';
 }
 
 // clears all of the selections
@@ -49,7 +53,21 @@ function showScratch() {
     for (const stream of allScratch) {
                     stream.style.display = '';
     }
-    htmlButton.style.backgroundColor = '#ED535A';
-    htmlButton.style.boxShadow = '0px 0px';
+    scratchButton.style.backgroundColor = '#ED535A';
+    scratchButton.style.boxShadow = '0px 0px';
 };
 
+// displays all the Spreadsheet tagged boxes
+
+let spreadsheetButton = document.getElementById('spreadsheet-button');
+
+spreadsheetButton.addEventListener('click', showSpreadsheet);
+
+function showSpreadsheet() {
+    const allSpreadsheet = document.getElementsByClassName ('spreadsheet-tag');
+    for (const stream of allSpreadsheet) {
+                    stream.style.display = '';
+    }
+    spreadsheetButton.style.backgroundColor = '#ED535A';
+    spreadsheetButton.style.boxShadow = '0px 0px';
+};
