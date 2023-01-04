@@ -289,3 +289,54 @@ footer h4 {
 span {
     color:#032144;
 }
+
+
+/* Skills Page Styles */
+
+.skills-list div {
+    height: 30px;
+    width: 80%;
+    background-color: #FAE395;
+    color:#032144;
+    border:#032144 solid 2px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px black;
+    margin: 15px;
+}
+
+.skills-list {
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.skills-list p {
+    margin: auto;
+    line-height: 30px;
+}
+
+.skills-list div:hover {
+    background-color:#D4D6C5;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.skills-info div {
+    position: relative;
+    top: 200px;
+    width: 90%;
+    height: 500px;
+    background-color:#ED535A;
+    color:#FAE395;
+    border:#032144 3px solid;
+    border-radius: 15px;
+    margin: 20px;
+}
