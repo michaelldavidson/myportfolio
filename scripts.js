@@ -18,6 +18,12 @@ function buttonsBack () {
     scratchButton.style.boxShadow = '';
     spreadsheetButton.style.backgroundColor = '';
     spreadsheetButton.style.boxShadow = '';
+    videoButton.style.backgroundColor = '';
+    videoButton.style.boxShadow = '';
+    cssButton.style.backgroundColor = '';
+    cssButton.style.boxShadow = '';
+    javaButton.style.backgroundColor = '';
+    javaButton.style.boxShadow = '';
 }
 
 // clears all of the selections
@@ -92,4 +98,56 @@ function showSpreadsheet() {
     }
     spreadsheetButton.style.backgroundColor = '#ED535A';
     spreadsheetButton.style.boxShadow = '0px 0px';
+};
+
+
+// displays all the Video tagged boxes
+
+let videoButton = document.getElementById('video-button');
+
+videoButton.addEventListener('click', showVideo);
+
+function showVideo() {
+    hideElement();
+    buttonsBack();
+    const allVideo = document.getElementsByClassName ('video-tag');
+    for (const stream of allVideo) {
+                    stream.style.display = '';
+    }
+    videoButton.style.backgroundColor = '#ED535A';
+    videoButton.style.boxShadow = '0px 0px';
+};
+
+// displays all the CSS tagged boxes
+
+let cssButton = document.getElementById('css-button');
+
+cssButton.addEventListener('click', showCss);
+
+function showCss() {
+    hideElement();
+    buttonsBack();
+    const allCss = document.getElementsByClassName ('css-tag');
+    for (const stream of allCss) {
+                    stream.style.display = '';
+    }
+    cssButton.style.backgroundColor = '#ED535A';
+    cssButton.style.boxShadow = '0px 0px';
+};
+
+// displays all the javaScript tagged boxes
+
+let javaButton = document.getElementById('javascript-button');
+
+javaButton.addEventListener('click', showJava);
+
+function showJava() {
+    hideElement();
+    buttonsBack();
+    const allJava = document.getElementsByClassName ('javascript-tag');
+    for (const stream of allJava) {
+                    stream.style.display = '';
+    }
+    javaButton.style.backgroundColor = '#ED535A';
+    javaButton.style.boxShadow = '0px 0px';
 };
