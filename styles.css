@@ -340,3 +340,22 @@ span {
     border-radius: 15px;
     margin: 20px;
 }
+
+
+/* Skills Page Styling */
+
+.info-boxes {
+    padding: 20px;
+}
+
+.info-boxes h3 {
+    color:#032144;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.formal-ed {
+    color:#032144;
+    text-decoration: underline;
+    font-size: 18px;
+}
