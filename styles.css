@@ -311,6 +311,7 @@ span {
     top: 200px;
     margin: 0 auto;
     width: 60%;
+    min-width: 150px;
 }
 
 .skills-list p {
@@ -329,7 +330,7 @@ span {
     grid-template-columns: 20% 80%;
 }
 
-.skills-info div {
+.skills-info {
     position: relative;
     top: 200px;
     width: 90%;
@@ -357,5 +358,5 @@ span {
 .formal-ed {
     color:#032144;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 20px;
 }
