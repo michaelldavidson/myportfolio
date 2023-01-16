@@ -334,7 +334,7 @@ span {
     position: relative;
     top: 200px;
     width: 90%;
-    height: 500px;
+    min-height: 500px;
     background-color:#ED535A;
     color:#FAE395;
     border:#032144 3px solid;
@@ -358,5 +358,9 @@ span {
 .formal-ed {
     color:#032144;
     text-decoration: underline;
+    font-size: 20px;
+}
+
+.info-boxes p {
     font-size: 20px;
 }
