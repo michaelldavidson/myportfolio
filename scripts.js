@@ -50,7 +50,6 @@ function showHTML() {
     }
     htmlButton.style.backgroundColor = '#ED535A';
     htmlButton.style.boxShadow = '0px 0px';
-    htmlButton.addEventListener('click', hideHTML);
 };
 
 // Why doesn't this work?

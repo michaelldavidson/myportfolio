@@ -42,7 +42,6 @@ h2 {
 nav li {
     display: inline-block;
     width: 70px;
-    text-align: center;
     padding: 15px;
     border-radius: 20px 0px 0px 0px;
     font-family: 'Ubuntu' sans-serif;
@@ -135,6 +134,11 @@ nav {
     margin: 0 auto;
 }
 
+#map {
+    height: 320px;
+    width: 320px;
+}
+
 .map iframe {
     border:#032144 solid 3px;
     border-radius: 25px;
@@ -179,6 +183,17 @@ nav {
     .picture {
         grid-row-start: 2;
         grid-row-end: 3;
+        margin: 0px auto;
+    }
+
+    .picture img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #map {
+        height: 250px;
+        width: 250px;
     }
 
     .map {
@@ -188,15 +203,16 @@ nav {
     }
 
     .toronto-caption{
-       margin-right: 20px;
+       margin-right: 40px;
+       font-size: 12px;
     }
 }
 
 @media only screen and (max-width: 700px) {
 
     .grid-container {
-        grid-template-columns: 1fr 80% 1fr;
-        grid-template-rows: 40% 1fr 1fr;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 1fr 300px 300px;
     }
 
     .about-me {
@@ -212,7 +228,7 @@ nav {
         grid-row-end: 3;
         grid-column-start:2;
         grid-column-end: 3;
-        margin: 0px auto;
+        
     }
 
     .map {
@@ -525,4 +541,91 @@ span {
 
 .info-boxes p {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+   
+    nav {
+        top: 80px;
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+    }
+
+    nav li {
+        max-width: 130px;
+        height: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 50px;
+        text-align: center;
+        border:#032144 1px solid;
+        margin: 0;
+        background-color:#FAE395;
+    }
+
+    header {
+        height: 110px;
+    }
+
+    .project-cards {
+        top: 250px;
+        gap: 5px;
+    }
+
+    .card {
+        grid-template-columns: 90px 1fr;
+        border-radius: 20px;
+        height: auto;
+        width: 80%;
+        padding: 10px;
+        box-shadow: 3px 3px black;
+    }
+
+    .card img {
+        height: 80px;
+        width: 80px;
+        margin: 3px;
+        border-radius: 2px;
+    }
+
+    .card li {
+        font-size: 9px;
+        padding: 2px;
+    }
+
+    .buttons div {
+        width: 110px;
+        font-size: 14px;
+}
+
+.skills-list {
+
+    top: 120px;
+    font-size: 12px;
+ 
+}
+
+.skills-list p {
+    margin: auto;
+    line-height: 15px;
+}
+
+.skills-list div {
+    height: 35px;
+}
+
+.skills-info {
+    top: 60px;
+    margin: 20px auto;
+}
+
+.about-me p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 0px;
+    
+}
+
 }
