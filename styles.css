@@ -47,6 +47,7 @@ nav li {
     border-radius: 20px 0px 0px 0px;
     font-family: 'Ubuntu' sans-serif;
     margin-right: -20px;
+    text-align: left;
 }
 
 nav a {
@@ -129,6 +130,7 @@ nav {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 90%;
     margin: 0 auto;
 }
@@ -137,6 +139,123 @@ nav {
     border:#032144 solid 3px;
     border-radius: 25px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .map {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  .picture {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .about-me {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 2fr;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-me {
+        grid-row-start:1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .picture {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .map {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+    }
+
+    .toronto-caption{
+       margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 80% 1fr;
+        grid-template-rows: 40% 1fr 1fr;
+    }
+
+    .about-me {
+        grid-row-start:1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        overflow:scroll;
+    }
+
+    .picture {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start:2;
+        grid-column-end: 3;
+        margin: 0px auto;
+    }
+
+    .map {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: 0px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 10px;
+        position: absolute;
+        top: 25px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        line-height: 10px;
+        position: absolute;
+        top: 50px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav li {
+        width: 60px;
+        padding: 15px;
+        border-radius: 15px 0px 0px 0px;
+        margin-right: -20px;
+    }
+
+    header {
+        height: 60px;
+
+    }
+
+    nav {
+        top: 20px;
+    }
 }
 
 .picture {
@@ -342,6 +461,49 @@ span {
     margin: 20px;
 }
 
+@media only screen and (max-width: 700px) {
+   .skills-container {
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 100%;
+   }
+   
+    .skills-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        grid-row-start: 1;
+        width: 100%;
+        top: 100px;
+    }
+
+    .skills-list div {
+        height: 50px;
+        width: 140px;
+        margin: 5px;
+        vertical-align: middle;
+    }
+
+    .coding-skill {
+        grid-column-start: 1;
+    }
+
+    .it-use-skill {
+        grid-column-start: 2;
+    }
+
+    .design-thinking-skill {
+        grid-column-start: 3;
+    }
+
+    .teaching-skill {
+        grid-column-start: 4;
+    }
+
+    .skills-info {
+        grid-row-start: 2;
+        top: 70px;
+    }
+}
 
 /* Skills Page Styling */
 
